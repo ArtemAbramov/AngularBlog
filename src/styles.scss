@@ -20,8 +20,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--dark-color);
+  color: #fff;
 }
 
 a {
@@ -260,19 +260,29 @@ table th {
   background: var(--light-color);
 }
 
+.main-header {
+  position: relative;
+  z-index: 90;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  width: 100%;
+  //border-bottom: 1px solid #fff;
+  box-shadow: 0 0 10px 4px rgba(0,0,0, .2);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
   z-index: 1;
-  width: 100%;
   opacity: 0.9;
   margin-bottom: 1rem;
 
   &.main {
-    justify-content: center;
-    border-bottom: 1px solid var(--dark-color);
+    justify-content: space-between;
   }
 
   ul {
